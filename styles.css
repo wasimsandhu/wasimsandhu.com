@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('assets/Comfortaa-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+#header {
+    position: relative;
+
+    /* https://uigradients.com/#EndlessRiver */
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2);
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background-color: #37474F;
+    color: white;
+}
