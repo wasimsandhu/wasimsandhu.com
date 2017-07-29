@@ -21,9 +21,53 @@
     color: white;
 }
 
+/* Main Content */
+@media screen and (min-width: 768px) {
+    .projects {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    #conjugation .col-sm-2 {
+        margin-top: 25px;
+    }
+    
+    #badge {
+        text-align: right;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 768px) {
+      .projects {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    #badge {
+        text-align: center;
+    }
+}
+
+.projects {
+    margin-bottom: 20px;
+    border-bottom: 1.25px solid #ccc;
+}
+
+.projects p {
+    font-size: 18px;
+    text-align: justify;
+}
+
 /* Footer */
 #footer {
     text-align: center;
     background-color: #37474F;
     color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#footer .col-xs-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
