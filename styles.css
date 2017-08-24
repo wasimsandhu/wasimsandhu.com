@@ -5,6 +5,20 @@
     font-style: normal;
 }
 
+.construction {
+    color: white;
+    background: #D32F2F;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.construction a, .construction a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 /* Header */
 #header {
     position: relative;
@@ -19,6 +33,26 @@
     background-size: cover;
     overflow: hidden;
     color: white;
+}
+
+.me {
+    border: 5px white solid;
+}
+
+#software {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    
+    color: white;
+    text-align: center;
+    display: block;
+    float: none;
+    height: 80px;
+    
+    background: #485563;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* Main Content */
@@ -38,6 +72,11 @@
 }
 
 @media all and (min-width:0px) and (max-width: 768px) {
+    
+    #header {
+        text-align: center;
+    }
+    
       .projects {
         padding-left: 25px;
         padding-right: 25px;
@@ -56,6 +95,22 @@
 .projects p {
     font-size: 18px;
     text-align: justify;
+}
+
+.image-wrap {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.image-wrap-1 {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.image-mobile {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 /* Footer */
