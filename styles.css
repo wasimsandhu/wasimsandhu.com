@@ -39,8 +39,11 @@
     border: 5px white solid;
 }
 
-#software {
+.first-section {
     margin-top: -30px;
+}
+
+#section {
     margin-bottom: 20px;
     
     color: white;
@@ -71,25 +74,13 @@
     }
 }
 
-@media all and (min-width:0px) and (max-width: 768px) {
-    
-    #header {
-        text-align: center;
-    }
-    
-      .projects {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    
-    #badge {
-        text-align: center;
-    }
-}
-
 .projects {
     margin-bottom: 20px;
     border-bottom: 1.25px solid #ccc;
+}
+
+.no-border {
+    border-bottom: none;
 }
 
 .projects p {
@@ -113,6 +104,16 @@
     margin-bottom: 15px;
 }
 
+#contact {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#contact p {
+    font-size: 18px;
+    text-align: center;
+}
+
 /* Footer */
 #footer {
     text-align: center;
@@ -122,7 +123,48 @@
     padding-right: 100px;
 }
 
-#footer .col-xs-4 {
+#footer p {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#footer .align-right a img {
+    margin-right: 20px;
+}
+
+#footer .align-right {
+    float: right;
+}
+
+#footer .align-left {
+    float: left;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Mobile device styles */
+@media all and (min-width:0px) and (max-width: 768px) {
+    
+    #header {
+        text-align: center;
+    }
+    
+    .projects {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    #badge {
+        text-align: center;
+    }
+    
+    #footer div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #contact {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
