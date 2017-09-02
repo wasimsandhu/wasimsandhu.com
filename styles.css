@@ -1,8 +1,8 @@
-@font-face {
-    font-family: 'Comfortaa';
-    src: url('assets/Comfortaa-Bold.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
 }
 
 .construction {
@@ -17,6 +17,39 @@
 .construction a, .construction a:hover {
     text-decoration: none;
     color: white;
+}
+
+#navbar {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+    background-color: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+/* Navbar */
+#navbar p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    font-size: 24px;
 }
 
 /* Header */
@@ -49,7 +82,6 @@
     color: white;
     text-align: center;
     display: block;
-    float: none;
     height: 80px;
     
     background: #485563;  /* fallback for old browsers */
@@ -144,6 +176,21 @@
 
 /* Mobile device styles */
 @media all and (min-width:0px) and (max-width: 768px) {
+    
+    #navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    #navbar a:hover {
+        font-size: 20px;
+    }
+    
+    #navbar p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+    }
     
     #header {
         text-align: center;

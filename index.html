@@ -18,17 +18,41 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <!-- Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">  
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+
     </head>
     
     <body>
         
-        <!-- "Header" -->
+        <!-- Navigation bar -->
+        <div class="row" id="navbar">
+            <div class="col-xs-3">
+                <p><a href="http://wsandhu.com">home</a></p>
+            </div>
+            <div class="col-xs-3">
+                <p><a href="#">about</a></p>
+            </div>
+            <div class="col-xs-3">
+                <p><a href="#">blog</a></p>
+            </div>
+            <div class="col-xs-3">
+                <p><a href="#">contact</a></p>
+            </div>
+        </div>
+        
+        <!-- Header -->
         <div class="jumbotron" id="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-4 col-md-2 hidden-xs">
                         <img style="margin: 0 auto; margin-top: 30px;" src="images/me.jpg" class="img-circle img-responsive me" width="200" height="200" />
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-2 visible-xs">
+                        <img style="margin: 0 auto; margin-top: 10px;" src="images/me.jpg" class="img-circle img-responsive me" width="200" height="200" />
                     </div>
                     
                     <div class="col-sm-8 col-md-10">
@@ -115,7 +139,7 @@
         
         <!-- Current in construction banner -->
         <div class="row construction">
-            <span>Website currently in construction! <u><a href="https://github.com/wasimsandhu/wasim.co/commits/master">Check out the code here.</a></u></span>
+            <span>Website currently in construction! <u><a href="https://github.com/wasimsandhu/wasimsandhu.com/commits/master">Check out the code here.</a></u></span>
         </div>
         
         <!-- Desktop footer -->
