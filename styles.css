@@ -5,6 +5,11 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .construction {
     color: white;
     background: #D32F2F;
@@ -21,12 +26,9 @@ body {
 
 #navbar {
     display: block;
-    float: left;
     width: 100%;
     height: 50px;
     
-    margin-left: 0;
-    margin-right: 0;
     padding-left: 150px;
     padding-right: 150px;
     
@@ -49,7 +51,7 @@ body {
 }
 
 #navbar a:hover {
-    font-size: 24px;
+    border-bottom: 4px solid white;
 }
 
 /* Header */
@@ -64,8 +66,12 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    overflow: hidden;
     color: white;
+}
+
+#header row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .me {
@@ -82,6 +88,7 @@ body {
     color: white;
     text-align: center;
     display: block;
+    width: 100%;
     height: 80px;
     
     background: #485563;  /* fallback for old browsers */
@@ -180,10 +187,6 @@ body {
     #navbar {
         padding-left: 50px;
         padding-right: 50px;
-    }
-    
-    #navbar a:hover {
-        font-size: 20px;
     }
     
     #navbar p {

@@ -1,0 +1,130 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
+    
+    background-color: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Navigation bar */
+#navbar {
+    display: block;
+    width: 100%;
+    height: 70px;
+    
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#navbar p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    border-bottom: 4px solid white;
+}
+
+/* Header */
+#header h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* Blog body */
+#blog {
+    background: #FFF;
+    margin-top: 30px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    -webkit-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background-color: #37474F;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .align-right a img {
+    margin-right: 20px;
+}
+
+#footer .align-right {
+    float: right;
+}
+
+#footer .align-left {
+    float: left;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Mobile device styles */
+@media all and (min-width:0px) and (max-width: 768px) {
+    
+    #navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    #header h1 {
+        font-size: 36px;
+    }
+    
+    #navbar p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+    #footer div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #contact {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
