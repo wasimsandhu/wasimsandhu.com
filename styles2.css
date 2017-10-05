@@ -43,7 +43,11 @@ body {
 }
 
 #navbar a:hover {
-    border-bottom: 4px solid white;
+    border-bottom: 3px solid white;
+}
+
+#navbar .active {
+    border-bottom: 3px solid white;
 }
 
 /* Header */
@@ -51,22 +55,7 @@ body {
     text-align: center;
     color: white;
     font-size: 50px;
-    font-weight: 300;
-}
-
-/* Blog body */
-#blog {
-    background: #FFF;
-    margin-top: 30px;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    -webkit-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    font-weight: 500;
 }
 
 /* body paragraph style */

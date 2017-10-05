@@ -51,7 +51,11 @@ body {
 }
 
 #navbar a:hover {
-    border-bottom: 4px solid white;
+    border-bottom: 3px solid white;
+}
+
+#navbar .active {
+    border-bottom: 3px solid white;
 }
 
 /* Header */
@@ -153,6 +157,32 @@ body {
     text-align: center;
 }
 
+/* Blog */
+#blog {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#blog p, #blog a {
+    font-size: 18px;
+}
+
+#blog #date {
+    font-size: 15px;
+}
+
+#blogcontainer {
+    padding-right: 30px;
+}
+
+#sidebar {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid lightgray;
+}
+
 /* Footer */
 #footer {
     text-align: center;
@@ -199,9 +229,13 @@ body {
         text-align: center;
     }
     
-    .projects {
+    .projects, #blog {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    
+    #blogcontainer {
+        padding: 0;
     }
     
     #badge {
