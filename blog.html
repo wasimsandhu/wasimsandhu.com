@@ -10,7 +10,7 @@
         <meta name="description" content="Welcome to my blog." />
         <meta name="keywords" content="wasim, wasim sandhu, wsandhu, wasim akram sandhu, wasim blog" />
         
-        <title>Wasim Sandhu</title>
+        <title>Blog | Wasim Sandhu</title>
         
         <link rel="icon" href="images/icon.jpg">
         
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <!-- Stylesheets -->
-        <link rel="stylesheet" type="text/css" href="blog-styles.css">  
+        <link rel="stylesheet" type="text/css" href="styles.css">  
         
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
@@ -36,32 +36,50 @@
                 <p><a href="about.html">about</a></p>
             </div>
             <div class="col-xs-3">
-                <p><a href="blog.html">blog</a></p>
+                <p><a class="active" href="blog.html">blog</a></p>
             </div>
             <div class="col-xs-3">
                 <p><a href="contact.html">contact</a></p>
             </div>
         </div>
         
-        <div class="row" id="header">
-            <h1>wasim sandhu | blog</h1>
-        </div>
-        
-        <div class="container" id="blog">
-            <div class="row modal-body">
-                
-                <!-- Blog posts -->
-                <div class="col-md-8">
-                    <h1>First post!</h1>
-                    <p>Hello world! This is my blog.</p>
-                </div>
-                
-                <!-- Sidebar -->
-                <div class="col-md-4">
-                    <h1>Sidebar</h1>
-                    <p><a href="http://google.com">Sidebar link</a></p>
+        <!-- Header -->
+        <div class="jumbotron" style="padding-top: 0px; padding-bottom: 40px;"id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 hidden-xs">
+                        <img style="margin: 0 auto; margin-top: 30px;" src="images/alsome.jpg" class="img-circle img-responsive me" width="200" height="200" />
+                    </div>
+
+                    <div class="col-md-4 visible-xs">
+                        <img style="margin: 0 auto; margin-top: 30px;" src="images/alsome.jpg" class="img-circle img-responsive me" width="200" height="200" />
+                    </div>
+                    
+                    <div class="col-md-8 hidden-sm hidden-xs">
+                        <h1 style="margin-top: 50px;">Welcome to my blog.</h1>
+                        <p>Here, I write about my journey to medical school, the projects I'm working on, and occasionally my personal life. Feel free to binge read all of my posts.</p>
+                    </div>
+                    
+                    <div class="col-md-8 visible-sm visible-xs" style="text-align: center; margin-bottom: -20px;">
+                        <h1>Welcome to my blog.</h1>
+                        <p>Here, I write about my journey to medical school, the projects I'm working on, and occasionally my personal life. Feel free to binge read all of my posts.</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="row first-section" id="section">
+            <h1>Blog Posts</h1>
+        </div>
+        
+        <div class="row" id="blog">
+                <!-- Blog posts -->
+                <div class="col-md-8" id="blogcontainer"></div>
+                
+                <!-- Sidebar -->
+                <div class="col-md-4 hidden-sm hidden-xs" id="sidebar">
+                    <h3>Recent Posts</h3>
+                </div>
         </div>
         
         <!-- Desktop footer -->
@@ -97,6 +115,23 @@
         
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    
+        <script>
+          var config = {
+            apiKey: "AIzaSyBSm4RlNKhU5eWSf4jU2Mpv8yenjPlswwI",
+            authDomain: "wasimsandhudotcom.firebaseapp.com",
+            databaseURL: "https://wasimsandhudotcom.firebaseio.com",
+            projectId: "wasimsandhudotcom",
+            storageBucket: "wasimsandhudotcom.appspot.com",
+            messagingSenderId: "319330595736"
+          };
+          firebase.initializeApp(config);
+        </script>
+    
+        <script src="blog.js"></script>
         
     </body>
     
