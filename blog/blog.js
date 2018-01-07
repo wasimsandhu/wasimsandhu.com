@@ -26,5 +26,14 @@ blogPostsRef.orderByChild('number').on('child_added', function(snapshot) {
     blogPost.append(blogOpener);
     blogPost.append(postLink);
     
-    blogContainer.append(blogPost);
+    if (blogContainer != null) {
+        blogContainer.append(blogPost);
+    }
+    
+    var ul = document.getElementById("recentposts");
+    var li = document.createElement("li");
+    li.className="list-group-item";
+    li.innerHTML = "<a href='" + snapshot.val().link + "'>" + snapshot.val().title + "</a><br><span>" + snapshot.val().date + "</span>";
+    
+    ul.append(li);
 });

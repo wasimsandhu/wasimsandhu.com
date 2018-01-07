@@ -12,13 +12,13 @@
         
         <title>Blog | Wasim Sandhu</title>
         
-        <link rel="icon" href="images/icon.jpg">
+        <link rel="icon" href="../images/icon.jpg">
         
         <!-- Twitter Bootstrap 3.3.7 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <!-- Stylesheets -->
-        <link rel="stylesheet" type="text/css" href="styles.css">  
+        <link rel="stylesheet" type="text/css" href="../styles.css">  
         
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
@@ -30,16 +30,16 @@
         <!-- Navigation bar -->
         <div class="row" id="navbar">
             <div class="col-xs-3">
-                <p><a href="index.html">home</a></p>
+                <p><a href="../">home</a></p>
             </div>
             <div class="col-xs-3">
-                <p><a href="about.html">about</a></p>
+                <p><a href="../about">about</a></p>
             </div>
             <div class="col-xs-3">
-                <p><a class="active" href="blog.html">blog</a></p>
+                <p><a class="active" href="#">blog</a></p>
             </div>
             <div class="col-xs-3">
-                <p><a href="contact.html">contact</a></p>
+                <p><a href="../contact">contact</a></p>
             </div>
         </div>
         
@@ -48,16 +48,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 hidden-xs">
-                        <img style="margin: 0 auto; margin-top: 30px;" src="images/alsome.jpg" class="img-circle img-responsive me" width="200" height="200" />
+                        <img style="margin: 0 auto; margin-top: 30px;" src="../images/2018.JPG" class="img-circle img-responsive me" width="200" height="200" />
                     </div>
 
                     <div class="col-md-4 visible-xs">
-                        <img style="margin: 0 auto; margin-top: 30px;" src="images/alsome.jpg" class="img-circle img-responsive me" width="200" height="200" />
+                        <img style="margin: 0 auto; margin-top: 30px;" src="../images/2018.JPG" class="img-circle img-responsive me" width="200" height="200" />
                     </div>
                     
-                    <div class="col-md-8 hidden-sm hidden-xs">
+                    <div class="col-md-8 hidden-sm hidden-xs" style="margin-left: -40px;">
                         <h1 style="margin-top: 50px;">Welcome to my blog.</h1>
-                        <p>Here, I write about my journey to medical school, the projects I'm working on, and occasionally my personal life. Feel free to binge read all of my posts.</p>
+                        <p>Here, I write about my journey to medical school, the projects I'm working on, and occasionally my personal life. Feel free to binge read all of my posts or leave a comment!</p>
                     </div>
                     
                     <div class="col-md-8 visible-sm visible-xs" style="text-align: center; margin-bottom: -20px;">
@@ -78,7 +78,13 @@
                 
                 <!-- Sidebar -->
                 <div class="col-md-4 hidden-sm hidden-xs" id="sidebar">
+                    
                     <h3>Recent Posts</h3>
+                    <ul class="list-group" style="margin-bottom: 20px;" id="recentposts"></ul>
+                    
+                    <h3>Subscribe</h3>
+                    <input type="text" class="form-control" id="email" placeholder="Enter an email address">
+                    <button style="margin-top: 10px;" class="btn btn-primary">Subscribe to wasimsandhu.com!</button>
                 </div>
         </div>
         

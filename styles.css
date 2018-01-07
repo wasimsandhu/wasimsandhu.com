@@ -24,20 +24,20 @@ body {
     color: white;
 }
 
+/* Navbar */
 #navbar {
     display: block;
     width: 100%;
     height: 50px;
     
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
     
-    background-color: #43cea2;
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
-    background: linear-gradient(to right, #185a9d, #43cea2);
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* Navbar */
 #navbar p {
     text-align: center;
     margin-top: 20px;
@@ -63,14 +63,15 @@ body {
     position: relative;
 
     /* https://uigradients.com/#EndlessRiver */
-    background: #43cea2;
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
-    background: linear-gradient(to right, #185a9d, #43cea2);
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     width: 100%;
     height: 100%;
     background-size: cover;
     color: white;
+    
 }
 
 #header row {
@@ -142,6 +143,11 @@ body {
     margin-left: 20px;
 }
 
+#bca {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 .image-mobile {
     width: 100%;
     margin-bottom: 15px;
@@ -157,7 +163,7 @@ body {
     text-align: center;
 }
 
-/* Blog */
+/* Blog Styles */
 #blog {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -181,6 +187,11 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     border-left: 1px solid lightgray;
+}
+
+#sidebar .list-group .list-group-item a {
+    text-decoration: none;
+    color: darkslategray;
 }
 
 /* Footer */
@@ -210,6 +221,7 @@ body {
     font-weight: 500;
     font-size: 18px;
 }
+
 
 /* Mobile device styles */
 @media all and (min-width:0px) and (max-width: 768px) {
