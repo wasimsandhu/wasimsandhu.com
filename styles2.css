@@ -60,7 +60,7 @@ body {
 }
 
 /* body paragraph style */
-#contactme {
+#contactme, #aboutpage {
     color: white;
     text-align: center;
     font-size: 18px;
@@ -70,9 +70,13 @@ body {
     margin-bottom: 20px;
 }
 
-#contactme a {
+#aboutpage p {
+    margin-bottom: 20px;
+}
+
+#contactme a, #aboutpage a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -135,7 +139,7 @@ body {
         padding-right: 50px;
     }
     
-    #contactme {
+    #contactme, #aboutpage {
         padding-left: 50px;
         padding-right: 50px;
     }
