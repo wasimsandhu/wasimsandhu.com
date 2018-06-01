@@ -24,40 +24,6 @@ body {
     color: white;
 }
 
-/* Navbar */
-#navbar {
-    display: block;
-    width: 100%;
-    height: 50px;
-    
-    padding-left: 250px;
-    padding-right: 250px;
-    
-    background: #7474BF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#navbar p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-#navbar a:hover {
-    border-bottom: 3px solid white;
-}
-
-#navbar .active {
-    border-bottom: 3px solid white;
-}
-
 /* Header */
 #header {
     position: relative;
@@ -116,6 +82,17 @@ body {
     #badge {
         text-align: right;
     }
+    
+    .contact {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .contact p {
+        font-size: 18px;
+        text-align: justify;
+    }
 }
 
 .projects {
@@ -155,47 +132,6 @@ body {
 .image-mobile {
     width: 100%;
     margin-bottom: 15px;
-}
-
-#contact {
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-#contact p {
-    font-size: 18px;
-    text-align: center;
-}
-
-/* Blog Styles */
-#blog {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-#blog p, #blog a {
-    font-size: 18px;
-}
-
-#blog #date {
-    font-size: 15px;
-}
-
-#blogcontainer {
-    padding-right: 30px;
-}
-
-#sidebar {
-    padding-left: 30px;
-    padding-right: 30px;
-    border-left: 1px solid lightgray;
-}
-
-#sidebar .list-group .list-group-item a {
-    text-decoration: none;
-    color: darkslategray;
 }
 
 /* Footer */
