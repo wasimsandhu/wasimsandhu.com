@@ -166,28 +166,18 @@ body {
 /* Mobile device styles */
 @media all and (min-width:0px) and (max-width: 768px) {
     
-    #navbar {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    
-    #navbar p {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 18px;
-    }
-    
     #header {
         text-align: center;
     }
     
-    .projects, #blog {
+    .projects, .contact {
         padding-left: 25px;
         padding-right: 25px;
     }
-    
-    #blogcontainer {
-        padding: 0;
+     
+    .contact p {
+        font-size: 18px;
+        text-align: justify;
     }
     
     #badge {
@@ -197,10 +187,5 @@ body {
     #footer div {
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-    
-    #contact {
-        padding-left: 50px;
-        padding-right: 50px;
     }
 }
